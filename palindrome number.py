@@ -12,3 +12,17 @@ else:
             else:
                 print("False")
                 break
+
+Arr = input()
+flag = 0
+A = len(Arr)
+for i in range(A):
+    if Arr[i] == Arr[A-1-i]:
+        if i >= A-i:
+             break   
+    else:
+        flag = 1
+if flag == 0:
+    print("yes")
+else:
+    print("no")
